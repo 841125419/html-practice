@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="html-practice:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="html-practice-1.0.war">
+      <element id="artifact" artifact-name="html-practice:war exploded" />
+    </root>
+  </artifact>
+</component>

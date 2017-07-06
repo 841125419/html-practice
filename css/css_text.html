@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{width:300px;height:100px;border: 1px solid red;
+            overflow: hidden;text-overflow: ellipsis;}
+        .p1{text-indent: -5em;line-height: 150%;}
+        .p2 {white-space: pre;}
+        #px1{text-indent:16px;}
+        #pt1{text-indent:12pt;}
+        #em1{text-indent:1em;}
+        #per1{text-indent:10%}
+
+        h1 {text-align: center}
+        h2 {text-align: left}
+        h3 {text-align: right}
+        #div2 {width:200px;height:200px;border:1px solid red;text-align: justify;text-decoration: underline overline line-through;}
+    </style>
+
+</head>
+<body>
+<div id="div1">
+    <p class="p1">
+        sdfa;sdfaksdfjak;d  sfja;sdfjaksd   fjwioefhjkadfj;asd  kfjasdflj   asdfjasdf[adjfas;dkfjasd;kfjasioefjwk    lejfa;sdifasdfasdfjka;sdlkfjasidkjf
+    </p>
+    <p id="px1" class="p1">
+        sdfa;sdfaksdfjak;dsfja;s dfjaksdfjwioefhjkadf  j;asdkfjasdfljasdfja  sdf[adjfas;dkfjasd;kfjas    ioefjwk    lejfa;sdifasdfas    dfjka;sdlkfjasidkjf
+    </p>
+    <p id="pt1" class="p1">
+        sdfa;sdfaksdfjak;ds    ja;sdfjaksdfjwioe   fhjkadfj;asdk  fjasdfljasdfj   asdf[adjfas;d  fjasd;kfjasio  efjwklejfa;sdifasd    fasdfjka;s  dlkfjasidkjf
+    </p>
+    <p id="em1" class="p1">
+        sdfa;sdfaksdfjak;dsfja;sdfjaksdfjwio   efhjkadfj;asdk  fjasdfljasdfjasdf[adjfa   s;dkfjasd;kfjasioefjwk   jfa;sdifasdfasdfjka;s  lkfjasid     kjf
+    </p>
+    <p id="per1" class="p1">
+        sdfa;sdfaksdf    jak;dsfja;sdfjaks   dfjwioefhjkadfj;a   sdkfjasdflja   sdfjasdf[adjfas;dkfja  ;kfjasioefjwklej    fa;sdifasdf  asdfjka;s   dlkfjasidkjf
+    </p>
+
+
+</div>
+
+<p id="per2">
+    sdfa;sdfaksdfjak;  dsfja;sdfjaksdfjw   ioefhjkadfj;asdkfjasdflj  asdfjasdf[adj fas;dkfja   d;kfjasioefjwklejfa;sd  ifasdfasdfjka;sd  lkfjas   idkjf
+</p>
+<hr>
+<h1>这是标题 1</h1>
+<h2>这是标题 2</h2>
+<h3>这是标题 3</h3>
+<div id="div2">
+    这是标题 4
+</div>
+
+<hr>
+<p class="p2">This     paragraph has    many
+    spaces           in it.</p>
+
+<p class="p2">注释：当 white-space 属性设置为 pre 时，浏览器不会合并空白符，也不会忽略换行符。</p>
+<hr>
+<div>
+    some text
+    <p>Some more text.</p>
+</div>
+</body>
+</html>

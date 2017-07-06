@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{border:1px solid black; width:300px; height:100px; float:left;}
+        img{ width:300px; height:100px; }
+    </style>
+    <script type="text/javascript">
+        function allowDrop(ev)
+        {
+            ev.preventDefault();
+        }
+
+        function drag(ev)
+        {
+            ev.dataTransfer.setData("Text",ev.target.id)
+        }
+
+        function drop(ev)
+        {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+</head>
+<body>
+<div ondragover="allowDrop(event)" ondrop="drop(event)">
+    <img src="img/beijing.jpg" draggable="true" ondragstart="drag(event)" id="dragObj"/>
+</div>
+<div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)">
+</div>
+
+</body>
+</html>

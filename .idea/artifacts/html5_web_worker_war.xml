@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="html5_web_worker:war">
+    <output-path>$PROJECT_DIR$/html5_web_worker/target</output-path>
+    <root id="archive" name="html5_web_worker-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="html5_web_worker:war exploded" />
+    </root>
+  </artifact>
+</component>
