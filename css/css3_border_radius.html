@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div
+        {
+            text-align:center;
+            border:2px solid #a1a1a1;
+            padding:10px 40px;
+            background:#dddddd;
+            height:200px;
+            width:350px;
+            border-radius:121px;
+            -moz-border-radius:50px; /* 老的 Firefox */
+        }
+        div:hover{
+            background:#ffffff
+        }
+    </style>
+    <script>
+        function div1Click(obj){
+            alert(obj);
+            alert(obj.width);
+        }
+    </script>
+</head>
+<body>
+
+<div id="div1" onclick="div1Click(this);">border-radius 属性允许您向元素添加圆角。</div>
+<div id="div2"></div>
+</body>
+</html>
